@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #0a2540;
+}
+
+section {
+  border-bottom: 1px solid #eee;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0a2540;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+.network-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.network-item {
+  text-align: center;
+}
+
+.network-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.socials a {
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero-subtitle {
+  margin-top: 10px;
+}
+
+.hero-tagline {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* PRIMARY (matches your logo color) */
+.btn.primary {
+  background: #0a2540;
+  color: white;
+}
+
+/* SECONDARY (outlined version of your brand) */
+.btn.secondary {
+  background: transparent;
+  color: #0a2540;
+  border: 1px solid #0a2540;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo img:hover {
+  opacity: 0.8;
+}
+
+
+.services {
+  padding: 40px 20px;
+}
+
+.service-group {
+  margin-bottom: 25px;
+}
+
+.service-group h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-group i {
+  width: 18px;
+  height: 18px;
+}
+
+
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-intro {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 6px 0;
+}
+
+.contact-info a {
+  color: #0a2540;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-actions {
+  margin-top: 20px;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  background: #fafafa;
+
+}
+
+.footer-content p {
+  margin: 4px 0;
+}
