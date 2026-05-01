@@ -1,5 +1,16 @@
+a {
+  color: #0a2540;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   max-width: 800px;
   margin: auto;
   line-height: 1.6;
@@ -34,10 +45,46 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+
+  align-items: stretch;
+
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
 
 .network-item {
   text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  border: 1px solid #f2f2f2;
+  align-items: center;
+
+}
+
+.network-item:hover {
+  background: #fafafa;
+  transform: translateY(-3px);
+}
+
+.network-item a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.network-item h3 {
+  margin-bottom: 6px;
+}
+
+.network-item h3 a:hover {
+  text-decoration: underline;
 }
 
 .network-item img {
@@ -45,11 +92,27 @@ nav a:hover {
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   padding: 8px;
+
+  transition: 0.2s ease;
+}
+
+
+.network-item img:hover {
+  transform: scale(1.05);
+}
+
+.network-item p {
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+.network-item .socials {
+  margin-top: auto;
 }
 
 .socials a {
@@ -103,6 +166,17 @@ nav a:hover {
   color: #0a2540;
   border: 1px solid #0a2540;
 }
+
+.btn.primary:hover {
+  opacity: 0.9;
+}
+
+.btn.secondary:hover {
+  background: #0a2540;
+  color: white;
+}
+
+
 
 .logo img {
   height: 40px;
