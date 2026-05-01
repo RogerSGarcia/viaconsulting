@@ -13,7 +13,10 @@ From design and branding to administrative and business support, our network all
 ---
 
 <div class="network-list">
-  {% for person in site.network %}
+
+  {% assign sorted_network = site.network | sort: "order" %}
+
+  {% for person in sorted_network %}
     {% if person.published != false %}
       <div class="network-item">
         {% if person.pic %}
