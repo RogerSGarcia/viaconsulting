@@ -22,7 +22,11 @@ title: Home
     <a href="/contact" class="btn secondary">
       Ask a Question
     </a>
-    <a href="https://viaconsulting.youcanbook.me/" target="_blank" class="btn primary">
+    <a href="https://viaconsulting.youcanbook.me/" target="_blank" 
+    onclick="gtag('event','booking_click', {
+    'event_category':'engagement',
+    'event_label':'hero_button'
+    });" class="btn primary">
       Book Consultation
     </a>
   </div>
@@ -77,7 +81,6 @@ title: Home
   </p>
 </section>
 
-
 <section id="contact" class="contact">
   <h2>Get in Touch</h2>
 
@@ -94,7 +97,11 @@ title: Home
     </p>
     <p>
       <strong>WhatsApp:</strong>
-      <a href="https://wa.me/19082421884" target="_blank">Message us</a>
+      <a href="https://wa.me/19082421884" target="_blank"
+      onclick="gtag('event','whatsapp_click', {
+      'event_category':'engagement',
+      'event_label':'homepage'
+      });">Message us</a>
     </p>
     <p>
       <strong>Email:</strong>
@@ -102,14 +109,22 @@ title: Home
     </p>
     <p>
       <strong>Instagram:</strong>
-      <a href="https://www.instagram.com/viaconsultingusa/" target="_blank">
+      <a href="https://www.instagram.com/viaconsultingusa/" target="_blank"
+        onclick="gtag('event','instagram_click', {
+          'event_category':'engagement',
+          'event_label':'homepage'
+        });">
         @viaconsultingusa
       </a>
     </p>
   </div>
 
   <div class="contact-actions">
-    <a href="https://viaconsulting.youcanbook.me/" target="_blank" class="btn primary">
+    <a href="https://viaconsulting.youcanbook.me/" target="_blank" 
+    onclick="gtag('event','booking_click', {
+    'event_category':'engagement',
+    'event_label':'homepage'
+    });" class="btn primary">
       Book Consultation
     </a>
   </div>
